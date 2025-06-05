@@ -1,0 +1,70 @@
+# Arquivo .gitignore para o backend Python/FastAPI
+
+# Ambiente Virtual
+# Substitua 'venv/' pelo nome da sua pasta de ambiente virtual, se for diferente
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Arquivos de bytecode e cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Arquivos de configuração de IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivo .env - MUITO IMPORTANTE para não enviar segredos!
+.env
+
+# Logs
+*.log
+logs/
+
+# Bancos de dados locais (ex: SQLite, se usado para testes)
+*.sqlite3
+*.db
+
+# Pastas de dados e relatórios locais (se você as criar durante o desenvolvimento/teste local)
+# Estas são as pastas que configuramos para o Heroku, mas se você as criar localmente para teste,
+# pode querer ignorá-las no Git.
+chroma_db_heroku_data/
+reports_heroku_data/
+
+# Cobertura de testes
+.coverage
+coverage.xml
+htmlcov/
+
+# Artefatos de build e distribuição Python
+build/
+dist/
+downloads/
+eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Arquivos específicos do Sistema Operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Arquivos de Jupyter Notebook (se usar)
+.ipynb_checkpoints
+
+# Outros
+*.swp # Arquivos de swap do Vim
